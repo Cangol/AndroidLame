@@ -1,17 +1,31 @@
-apply plugin: 'com.android.model.application'
-
-model {
-    android {
-        compileSdkVersion= 22
-        buildToolsVersion ="22.0.0"
-
-        defaultConfig.with {
-            minSdkVersion.apiLevel = 8
-            targetSdkVersion.apiLevel = 23
-        }
-        lintOptions.with {
-            abortOnError false
-        }
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.0'
+    defaultConfig {
+        applicationId "com.jince.goldmaster.customer"
+        multiDexEnabled false
+        minSdkVersion 8
+        versionCode 1
+        versionName "1.0.0"
+        sourceSets.main.jniLibs.srcDirs = ['libs']
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries false
+        incremental true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 dependencies {
