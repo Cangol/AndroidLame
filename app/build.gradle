@@ -9,7 +9,6 @@ android {
         versionCode 1
         versionName "1.0.0"
         sourceSets.main.jniLibs.srcDirs = ['libs']
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     dexOptions {
         javaMaxHeapSize "4g"
