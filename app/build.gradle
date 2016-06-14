@@ -9,6 +9,9 @@ model {
             minSdkVersion.apiLevel = 8
             targetSdkVersion.apiLevel = 23
         }
+        lintOptions.with {
+            abortOnError false
+        }
     }
 }
 dependencies {
