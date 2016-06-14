@@ -1,6 +1,6 @@
 # AndroidLame
 
-##lame 
+##lame
 [lame 官网](http://lame.sourceforge.net/)
 本项目主要方便大家在android上使用lame。  
 Android使用AudioRecord录音时不支持mp3格式，需要先录制为raw格式，然后在使用lame转换成mp3
