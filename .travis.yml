@@ -20,7 +20,6 @@ before_install:
     - unzip -q android-ndk-r11c-linux-x86_64.zip
     - export ANDROID_NDK_HOME=$PWD/android-ndk-r11c-linux-x86_64
     - export PATH=$ANDROID_NDK_HOME:$PATH
-    - chmod a+x $ANDROID_NDK_HOME/ndk-build.bin
 # Emulator Management: Create, Start and Wait
 before_script:
   - echo no | android create avd --force -n test -t android-19 --abi armeabi-v7a
