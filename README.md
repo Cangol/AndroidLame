@@ -1,5 +1,4 @@
 # AndroidLame
-======
 
 ##lame 
 [lame 官网](http://lame.sourceforge.net/)
