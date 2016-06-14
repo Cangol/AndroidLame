@@ -1,5 +1,6 @@
 # AndroidLame
 
+[![Build Status](https://travis-ci.org/Cangol/AndroidLame.svg?branch=master)](https://travis-ci.org/Cangol/AndroidLame)
 ##lame
 [lame 官网](http://lame.sourceforge.net/)
 本项目主要方便大家在android上使用lame。  
