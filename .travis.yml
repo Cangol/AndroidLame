@@ -15,6 +15,11 @@ before_install:
     - unzip -q gradle-2.10-all.zip
     - export GRADLE_HOME=$PWD/gradle-2.10
     - export PATH=$GRADLE_HOME/bin:$PATH
+    # Get Android NDK
+    - wget  -q http://dl.google.com/android/repository/android-ndk-r11c-linux-x86_64.zip
+    - unzip -q android-ndk-r11c-linux-x86_64.zip
+    - export ANDROID_NDK_HOME=$PWD/android-ndk-r11c-linux-x86_64
+    - chmod a+x $PWD/android-ndk-r11c-linux-x86_64/ndk.bin
 # Emulator Management: Create, Start and Wait
 before_script:
   - echo no | android create avd --force -n test -t android-19 --abi armeabi-v7a
