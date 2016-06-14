@@ -1,4 +1,4 @@
-package mobi.cangol.mobi.utils;
+package mobi.cangol.mobile.utils;
 
 import android.app.Activity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package mobi.cangol.mobi.utils;
+package mobi.cangol.mobile.utils;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

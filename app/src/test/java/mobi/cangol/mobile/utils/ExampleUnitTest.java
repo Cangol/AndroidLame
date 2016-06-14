@@ -1,4 +1,4 @@
-package mobi.cangol.mobi.utils;
+package mobi.cangol.mobile.utils;
 
 import org.junit.Test;
 
