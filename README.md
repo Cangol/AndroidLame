@@ -13,11 +13,11 @@ Maven
          <groupId>mobi.cangol.mobile</groupId>
          <artifactId>lame</artifactId>
          <version>1.0.0/version>
-         <type>aar</type>
+         <type>pom</type>
      </dependency>
 Gradle
  
-    compile 'mobi.cangol.mobile:lame:1.0.0@aar'
+    compile 'mobi.cangol.mobile:lame:1.0.0'
 ##使用方法：
 
     LameUtils lameUtils = new LameUtils(1, 16000, 96);
