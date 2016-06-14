@@ -2,18 +2,18 @@ apply plugin: 'com.android.model.application'
 
 model {
     android {
-        compileSdkVersion= 23
-        buildToolsVersion ="23.0.3"
+        compileSdkVersion= 22
+        buildToolsVersion ="22.0.0"
 
         defaultConfig.with {
-            minSdkVersion.apiLevel = 13
-            targetSdkVersion.apiLevel = 23
+            minSdkVersion.apiLevel = 8
+            targetSdkVersion.apiLevel = 22
         }
     }
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:22.0.+'
     compile project(':lame')
 }
