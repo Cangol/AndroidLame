@@ -28,6 +28,8 @@ public class LameUtils {
     static {
         System.loadLibrary("mp3lame");
     }
+    public native String getSystemABI();
+
     public native String getVersion();
 
     private native void initEncoder(int numChannels, int sampleRate, int bitRate, int mode, int quality);
