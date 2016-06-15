@@ -16,7 +16,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="mobi.cangol.mobile">
+          package="mobi.cangol.mobile.lame">
 
     <application
         android:allowBackup="true"
