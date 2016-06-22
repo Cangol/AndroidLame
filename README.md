@@ -18,6 +18,9 @@ Maven
 Gradle
  
     compile 'mobi.cangol.mobile:lame:1.0.0'
+直接下载jar和so文件使用
+    
+     https://github.com/Cangol/AndroidLame/tree/master/downloads
 ##使用方法：
 
     LameUtils lameUtils = new LameUtils(1, 16000, 96);
