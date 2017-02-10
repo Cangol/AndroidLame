@@ -9,15 +9,15 @@ Android使用AudioRecord录音时不支持mp3格式，需要先录制为raw格�
 ##引用方式    
 Maven
 
-    <dependency>
-        <groupId>mobi.cangol.mobile</groupId>
-        <artifactId>lame</artifactId>
-        <version>1.0.1</version>
-        <type>pom</type>
-    </dependency>
+      <dependency>
+          <groupId>mobi.cangol.mobile</groupId>
+          <artifactId>lame</artifactId>
+          <version>1.0.1</version>
+          <type>pom</type>
+      </dependency>
 Gradle
- 
-    compile 'mobi.cangol.mobile:lame:1.0.1'
+
+      compile 'mobi.cangol.mobile:lame:1.0.1'
 直接下载jar和so文件使用
     
      https://github.com/Cangol/AndroidLame/tree/master/downloads
