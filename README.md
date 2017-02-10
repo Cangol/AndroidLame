@@ -12,12 +12,12 @@ Maven
      <dependency>
          <groupId>mobi.cangol.mobile</groupId>
          <artifactId>lame</artifactId>
-         <version>1.0.0/version>
+         <version>1.0.1/version>
          <type>pom</type>
      </dependency>
 Gradle
  
-    compile 'mobi.cangol.mobile:lame:1.0.0'
+    compile 'mobi.cangol.mobile:lame:1.0.1'
 直接下载jar和so文件使用
     
      https://github.com/Cangol/AndroidLame/tree/master/downloads
