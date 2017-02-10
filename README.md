@@ -10,10 +10,10 @@ Android使用AudioRecord录音时不支持mp3格式，需要先录制为raw格�
 Maven
 
      <dependency>
-         <groupId>mobi.cangol.mobile</groupId>
-         <artifactId>lame</artifactId>
-         <version>1.0.1</version>
-         <type>pom</type>
+          <groupId>mobi.cangol.mobile</groupId>
+          <artifactId>lame</artifactId>
+          <version>1.0.1</version>
+          <type>pom</type>
      </dependency>
 Gradle
  
