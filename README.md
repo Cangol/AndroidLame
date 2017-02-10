@@ -12,7 +12,7 @@ Maven
      <dependency>
          <groupId>mobi.cangol.mobile</groupId>
          <artifactId>lame</artifactId>
-         <version>1.0.1</version>
+         <version>1.0.1/version>
          <type>pom</type>
      </dependency>
 Gradle
