@@ -2,12 +2,12 @@ apply plugin: 'com.android.model.library'
 
 model {
     android {
-        compileSdkVersion 25
-        buildToolsVersion '25.0.0'
+        compileSdkVersion 26
+        buildToolsVersion '26.0.2'
 
         defaultConfig.with {
             minSdkVersion.apiLevel = 14
-            targetSdkVersion.apiLevel = 25
+            targetSdkVersion.apiLevel = 26
         }
         lintOptions.with {
             abortOnError false
