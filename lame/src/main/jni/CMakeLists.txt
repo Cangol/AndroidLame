@@ -19,7 +19,7 @@
 # to use.
 cmake_minimum_required(VERSION 3.4.1)
 
-file(GLOB source_files "*.c")
+file(GLOB source_files "*.c" "vector/*.c")
 
 add_library(mp3lame SHARED ${source_files})
 
