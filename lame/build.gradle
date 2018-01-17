@@ -1,27 +1,27 @@
-apply plugin: 'com.android.model.library'
+apply plugin: 'com.android.library'
 
-model {
-    android {
-        compileSdkVersion 26
-        buildToolsVersion '26.0.2'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
 
-        defaultConfig.with {
-            minSdkVersion.apiLevel = 14
-            targetSdkVersion.apiLevel = 26
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        externalNativeBuild {
+            cmake {
+                cFlags '-DSTDC_HEADERS'
+                arguments '-DANDROID_TOOLCHAIN=clang', '-DANDROID_STL=gnustl_static'
+            }
         }
-        lintOptions.with {
-            abortOnError false
-        }
-        /*
-         * native build settings
-         */
-        ndk {
-            moduleName = "mp3lame"
-            toolchain = "clang"
-            stl = 'gnustl_static'
-            CFlags.addAll(['-DSTDC_HEADERS'])
-            ldLibs.addAll(['android', 'log'])
-            //abiFilters.addAll(['armeabi','armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'])
+    }
+    lintOptions.with {
+        abortOnError false
+    }
+    externalNativeBuild {
+        cmake {
+            path 'src/main/jni/CMakeLists.txt'
         }
     }
 }
