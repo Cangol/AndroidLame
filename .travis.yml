@@ -10,6 +10,11 @@ android:
     - extra-android-m2repository
     - extra-android-support
     - sys-img-armeabi-v7a-android-22
+licenses:
+  - 'android-sdk-preview-license-.+'
+  - 'android-sdk-license-.+'
+  - 'google-gdk-license-.+'
+  - '.+'
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -34,6 +39,7 @@ before_install:
 #  - unzip -oq android-ndk-r16b-linux-x86_64.zip android-ndk-root
 #  - rm android-ndk-r16b-linux-x86_64.zip
 #  - export ANDROID_NDK_HOME=$HOME/android-ndk-root
+
 # Emulator Management: Create, Start and Wait
 before_script:
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
