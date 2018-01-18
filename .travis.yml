@@ -27,13 +27,13 @@ before_install:
     - export GRADLE_HOME=$PWD/gradle-4.1
     - export PATH=$GRADLE_HOME/bin:$PATH
     # Get Android NDK
-#    - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
-#    - export ANDROID_NDK_HOME=$HOME/android-ndk-root
-  - rm -fr $HOME/android-ndk-root
-  - curl -L http://dl.google.com/android/repository/android-ndk-r16b-linux-x86_64.zip -O
-  - unzip -oq android-ndk-r16b-linux-x86_64.zip android-ndk-root
-  - rm android-ndk-r16b-linux-x86_64.zip
-  - export ANDROID_NDK_HOME=$HOME/android-ndk-root
+    - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
+    - export ANDROID_NDK_HOME=$HOME/android-ndk-root
+#  - rm -fr $HOME/android-ndk-root
+#  - curl -L http://dl.google.com/android/repository/android-ndk-r16b-linux-x86_64.zip -O
+#  - unzip -oq android-ndk-r16b-linux-x86_64.zip android-ndk-root
+#  - rm android-ndk-r16b-linux-x86_64.zip
+#  - export ANDROID_NDK_HOME=$HOME/android-ndk-root
 # Emulator Management: Create, Start and Wait
 before_script:
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
