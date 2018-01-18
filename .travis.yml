@@ -22,9 +22,9 @@ cache:
 
 before_install:
     # Gradle
-    - wget -q http://services.gradle.org/distributions/gradle-3.3-all.zip
-    - unzip -q gradle-3.3-all.zip
-    - export GRADLE_HOME=$PWD/gradle-3.3
+    - wget -q http://services.gradle.org/distributions/gradle-4.1-all.zip
+    - unzip -q gradle-4.1-all.zip
+    - export GRADLE_HOME=$PWD/gradle-4.1
     - export PATH=$GRADLE_HOME/bin:$PATH
     # Get Android NDK
     - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
